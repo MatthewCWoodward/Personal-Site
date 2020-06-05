@@ -1,0 +1,156 @@
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  overflow: auto;
+  height: 100%;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  animation-name: color;
+  animation-duration: 20s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  transition-timing-function: ease;
+}
+
+/* Button default */
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	padding: 1px 6px;
+	width: 15vw;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+  	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn-1 {
+	border: 3px solid #fff;
+	color: #fff;
+}
+
+/* Button addons */
+.btn-1c:after {
+	width: 0%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgb(53, 230, 177);
+}
+
+.btn-1c:hover,
+.btn-1c:active {
+  color: black;
+}
+
+.btn-1c:hover:after,
+.btn-1c:active:after {
+	width: 100%;
+}
+
+/* End of Button */
+
+.nameAndButtons{
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 1% 0;
+	top: 30%;
+	display: block;
+	/* background-color: black; */
+}
+
+.name{
+  font-family: 'Bookman';
+  letter-spacing: 6px;
+  font-size: 70px;
+  color: white;
+  padding: 10px 0px 15px 0px;
+  text-align: center;
+  margin: 0;
+}
+
+.buttonBox{
+  padding: 0;
+  margin-top: 10px;
+  text-align: center;
+  transform: translateY(-18%);
+}
+
+#buttonLeft {
+  margin: 0 2% 0 0;
+}
+
+#buttonRight {
+  margin: 0 0 0 2%;
+}
+
+.btnText {
+  margin-top: 6%;
+  margin-bottom: 6%;
+}
+
+@keyframes color {
+  0% {
+    background-color: rgb(255, 182, 194);
+  }
+  25% {
+    background-color: rgb(255, 182, 194);
+  }
+  50% {
+    background-color: #5e42fa;
+  }
+  75% {
+    background-color: #5e42fa;
+  }
+  100% {
+    background-color: rgb(103, 219, 194);
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
