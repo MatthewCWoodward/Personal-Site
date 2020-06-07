@@ -25,8 +25,7 @@ body {
 
 .about-content {
 	position: relative;
-	top: 40%;
-	line-height: 3em;
+	top: 35%;
 	text-align: center;
 }
 
@@ -40,12 +39,12 @@ body {
 	font-weight: 500;
 }
 
-p#back {
+p#home {
 	border: 3px solid white;
-	font-size: 80%;
+	font-size: 60%;
 	margin: 0px;
-	height: 20px;
-	display: inline-block;
+	padding: 1%;
+	height: auto;
 	color: white;
 	font-weight: 700;
 	letter-spacing: 1px;
@@ -59,7 +58,7 @@ p#back {
 	transition: all 0.3s;
 }
 
-p#back:after {
+p#home:after {
 	content: '';
 	position: absolute;
 	z-index: -1;
@@ -73,12 +72,12 @@ p#back:after {
 	background: rgb(53, 230, 177);
 }
 
-p#back:hover,
-p#back:active {
+p#home:hover,
+p#home:active {
 	color: black;
 }
 
-p#back:hover:after,
-p#back:active:after {
+p#home:hover:after,
+p#home:active:after {
 	width: 100%;
 }
