@@ -8,7 +8,7 @@
 		<main data-router-wrapper>
 			<section data-router-view="about" class="about">
 				<div class="about-content">
-					<p id="home">Home</p>
+					<a id="home" href='./index.html'">Home</a>
 					<h1>Hello! Welcome to the about me page</h1>
 					<p>That is all there is to know about me goodbye</p>
 				</div>
@@ -16,9 +16,3 @@
 		</main>
 	</body>
 </html>
-<script>
-	let home = document.getElementById('home')
-	home.addEventListener('click', () => {
-		window.location.href = './index.html';
-	})
-</script>
