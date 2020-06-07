@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" type="text/css" href="../public/about.css">
 		<title>About</title>
 	</head>
 	<body>
-		<h1>Hello! Welcome to the about me page</h1>
-		<p>That is all there is to know about me goodbye</p>
+		<main data-router-wrapper>
+			<section data-router-view="about" class="about">
+				<div class="about-content">
+					<p id="back">Go back</p>
+					<h1>Hello! Welcome to the about me page</h1>
+					<p>That is all there is to know about me goodbye</p>
+				</div>
+			</section>
+		</main>
 	</body>
 </html>

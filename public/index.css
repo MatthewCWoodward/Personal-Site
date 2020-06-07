@@ -60,7 +60,7 @@ a {
 .btn:after {
 	content: '';
 	position: absolute;
-  	z-index: -1;
+  z-index: -1;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
@@ -147,6 +147,33 @@ p#newColor {
   position: fixed;
   right: 1vw;
   top: 1vh;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+p#newColor:after {
+  content: '';
+	position: absolute;
+  z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 0%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgb(53, 230, 177);
+}
+
+p#newColor:hover,
+p#newColor:active {
+  color: black;
+}
+
+p#newColor:hover:after,
+p#newColor:active:after {
+  width: 100%;
 }
 
 /*

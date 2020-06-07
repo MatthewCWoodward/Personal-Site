@@ -1,0 +1,84 @@
+html{
+	overflow: hidden;
+	height: 100%;
+}
+
+body {
+	overflow: auto;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+	'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+	sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: white;
+}
+
+.about {
+	background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.about-content {
+	position: relative;
+	top: 40%;
+	line-height: 3em;
+	text-align: center;
+}
+
+.about-content h1 {
+	font-size: 200%;
+	font-weight: 700;
+}
+
+.about-content p {
+	font-size: 150%;
+	font-weight: 500;
+}
+
+p#back {
+	border: 3px solid white;
+	font-size: 80%;
+	margin: 0px;
+	height: 20px;
+	display: inline-block;
+	color: white;
+	font-weight: 700;
+	letter-spacing: 1px;
+	cursor: pointer;
+	text-transform: uppercase;
+	position: fixed;
+	left: 1vw;
+	top: 1vh;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+p#back:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	width: 0%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgb(53, 230, 177);
+}
+
+p#back:hover,
+p#back:active {
+	color: black;
+}
+
+p#back:hover:after,
+p#back:active:after {
+	width: 100%;
+}
