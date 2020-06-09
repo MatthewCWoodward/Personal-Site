@@ -16,29 +16,6 @@ body {
 	color: white;
 }
 
-.about {
-	background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-	position: absolute;
-	width: 100%;
-	height: 100%;
-}
-
-.about-content {
-	position: relative;
-	top: 35%;
-	text-align: center;
-}
-
-.about-content h1 {
-	font-size: 200%;
-	font-weight: 700;
-}
-
-.about-content p {
-	font-size: 150%;
-	font-weight: 500;
-}
-
 #home {
 	text-decoration: none;
 	background-color: transparent;
@@ -86,4 +63,44 @@ body {
 #home:hover:after,
 #home:active:after {
 	width: 100%;
+}
+
+.about {
+	background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.about-content {
+	position: relative;
+	top: 10.5%;
+}
+
+.about-content h1 {
+	font-size: 200%;
+	font-weight: 700;
+	margin: 0;
+}
+
+.about-content p {
+	font-size: 150%;
+	font-weight: 500;
+}
+
+.content {
+	display: inline-block;
+	vertical-align: bottom;
+	padding-left: 10%;
+}
+
+.image {
+	display: inline-block;
+	padding-left: 30%;
+}
+
+.image img {
+	width: 500px;
+	height: 559px;
+	border: 1px solid grey;
 }
