@@ -1,0 +1,124 @@
+html{
+	overflow: hidden;
+	height: 100%;
+}
+
+body {
+	overflow: auto;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+	'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+	sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: white;
+}
+
+.navButton {
+	text-decoration: none;
+	background-color: transparent;
+	border: 3px solid white;
+	font-size: 60%;
+	margin: 0px;
+	padding: 1%;
+	height: auto;
+	color: white;
+	font-weight: 700;
+	letter-spacing: 1px;
+	cursor: pointer;
+	text-transform: uppercase;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.navButton:focus {
+	outline: 0;
+}
+
+.navButton:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	width: 0%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgb(53, 230, 177);
+}
+
+.navButton:hover,
+.navButton:active {
+	color: black;
+}
+
+.navButton:hover:after,
+.navButton:active:after {
+	width: 100%;
+}
+
+.about {
+	background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.about-content {
+	position: relative;
+	top: 10.5%;
+}
+
+.about-content h1 {
+	font-size: 200%;
+	font-weight: 700;
+	margin: 0;
+}
+
+.about-content p {
+	font-size: 150%;
+	font-weight: 500;
+}
+
+.content {
+	display: inline-block;
+	vertical-align: bottom;
+	padding-left: 10%;
+}
+
+.image {
+	display: inline-block;
+	padding-left: 30%;
+}
+
+.image img {
+	width: 500px;
+	height: 559px;
+	border: 1px solid grey;
+}
+
+nav {
+	position: relative;
+	width: 100vw;
+	height: 70px;
+	background-color: grey;
+	top: 0;
+	margin: 0;
+	z-index: 0;
+}
+
+nav a {
+	position: relative;
+	top: 30px;
+}
+
+#home {
+	margin-left: 78%;
+	margin-right: 1vw;
+}
