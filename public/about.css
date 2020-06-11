@@ -30,8 +30,11 @@ body {
 	z-index: 0;
 }
 
-nav {
+nav, footer {
 	background-color: grey;
+}
+
+nav {
 	height: 70px;
 	display: flex;
 	justify-content: flex-end;
@@ -45,4 +48,25 @@ nav {
 	width: 15%;
 	white-space: nowrap;
 	margin-right: 3%;
+}
+
+footer {
+	display: flex;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	height: 60px;
+	align-items: center;
+	justify-content: space-around;
+}
+
+footer p {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	font-size: 13px;
+}
+
+footer p a {
+	text-decoration: underline;
 }
