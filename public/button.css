@@ -1,0 +1,47 @@
+.buttonAnimate {
+	text-decoration: none;
+	background-color: transparent;
+	border: 3px solid white;
+	font-size: 60%;
+	margin: 0px;
+	padding: 1%;
+	height: auto;
+	color: white;
+	font-weight: 700;
+	letter-spacing: 1px;
+	cursor: pointer;
+	text-transform: uppercase;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	z-index: 1;
+}
+
+.buttonAnimate:focus {
+	outline: 0;
+}
+
+.buttonAnimate:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	width: 0%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgb(53, 230, 177);
+}
+
+.buttonAnimate:hover,
+.buttonAnimate:active {
+	color: black;
+}
+
+.buttonAnimate:hover:after,
+.buttonAnimate:active:after {
+	width: 100%;
+}
