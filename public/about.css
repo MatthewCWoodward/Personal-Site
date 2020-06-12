@@ -5,12 +5,10 @@
 }
 
 html{
-	overflow: hidden;
 	height: 100%;
 }
 
 body {
-	overflow: auto;
 	height: 100%;
 	padding: 0;
 	margin: 0;
@@ -23,7 +21,7 @@ body {
 }
 
 .about {
-	background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+	background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -31,7 +29,8 @@ body {
 }
 
 nav, footer {
-	background-color: grey;
+	background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+ background-blend-mode: multiply;
 }
 
 nav {
@@ -52,9 +51,9 @@ nav {
 
 footer {
 	display: flex;
-	position: absolute;
-	width: 100%;
+	position: fixed;
 	bottom: 0;
+	width: 100%;
 	height: 60px;
 	align-items: center;
 	justify-content: space-around;
@@ -69,4 +68,32 @@ footer p {
 
 footer p a {
 	text-decoration: underline;
+}
+
+.grid-container {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 2%;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto auto;
+}
+
+.grid-container img {
+	margin: auto;
+	border-radius: 50%;
+	width: 250px;
+	border: 2px solid black;
+	grid-column-start: 1;
+  	grid-column-end: 4;
+}
+
+.grid-container p {
+	color: black;
+	border: 2px solid black;
+	background-color: rgb(243, 240, 240);
+	border-radius: 10%;
+	font-weight: 700;
+	letter-spacing: 1px;
+	padding: 1%;
 }
