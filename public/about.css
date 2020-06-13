@@ -71,7 +71,7 @@ footer p a {
 }
 
 .grid-container {
-	width: 85%;
+	width: 90%;
 	margin: 0 auto;
 	margin-top: 2%;
 	display: grid;
@@ -85,36 +85,36 @@ footer p a {
 	position: relative;
 	margin: 0 auto;
 	border-radius: 50%;
-	width: 260px;
-	height: 260px;
+	width: 310px;
+	height: 310px;
 	background: conic-gradient(#7358FF 0%, #57FAC3 100%) 50% 50% / 100% 100% no-repeat;
-	padding: 1.25%;
+	padding: 1.2%;
 }
 
 .grid-container img {
 	margin: auto;
-	width: 250px;
-	height: 250px;
+	width: 300px;
+	height: 300px;
 }
 
 .grid-container p {
 	color: black;
-	border: 2px solid rgb(78, 78, 78);
+	border: 1px solid rgb(78, 78, 78);
 	background-color: #F1EAFA;
 	border-radius: 5%;
 	font-weight: 500;
 	letter-spacing: .5px;
 	padding: 3%;
-	box-shadow: 2px 2px rgb(78, 78, 78);
+	box-shadow: 1px 1px rgb(78, 78, 78);
 	line-height: 1.5em;
 }
 
 .bio {
-	margin-top: 35%;
+	margin-top: 55%;
 }
 
 .contact {
-	margin-top: 55%;
+	margin-top: 70%;
 }
 
 .contact a {
