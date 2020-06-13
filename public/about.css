@@ -73,18 +73,15 @@ footer p a {
 
 .grid-container {
 	width: 90%;
-	margin: 0 auto;
-	margin-top: 2%;
+	margin: 2% auto;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(360px, auto));
-	grid-auto-rows: minmax(320px, auto) minmax(320px, auto) minmax(320px, auto);
-	grid-row-gap: 10px;
+	grid-template-columns: repeat(3, 1fr);
 	align-items: flex-start;
+	grid-gap: .5em;
 }
 
 .conic {
-	position: relative;
-	margin: 0 auto;
+	justify-self: center;
 	border-radius: 50%;
 	width: 310px;
 	height: 310px;
@@ -110,11 +107,11 @@ footer p a {
 }
 
 .bio {
-	margin-top: 20%;
+	align-self: center;
 }
 
 .contact {
-	margin-top: 38%;
+	align-self: end;
 }
 
 .contact a {
