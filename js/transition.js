@@ -9,7 +9,7 @@ class Fade extends Highway.Transition {
 				from.remove();
 				done();
 			} })
-			.fromTo(to.children[0], 1, { opacity: '0' }, { opacity: '1' })
+			.fromTo(to.children, 1, { opacity: '0' }, { opacity: '1' })
 	}
 	out({from, done}) {
 		done();
