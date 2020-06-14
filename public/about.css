@@ -8,19 +8,22 @@ html, body{
 	overflow: scroll;
 	height: 100%;
 	width: 100%;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 body {
 	padding: 0;
 	margin: 0;
-	font-family: 'Montserrat', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	color: white;
 }
 
 .about {
+	font-family: 'Montserrat', sans-serif;
 	background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 	position: relative;
 	width: 100%;
@@ -73,10 +76,12 @@ footer p a {
 .grid-container {
 	width: 90%;
 	margin: 2% auto;
+	margin-bottom: 1%;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: minmax(auto, 250px);
 	align-items: flex-start;
-	grid-gap: .5em;
+	grid-column-gap: .5em;
 }
 
 .conic {
@@ -94,7 +99,7 @@ footer p a {
 	height: 300px;
 }
 
-.grid-container p {
+.grid-container p, .profile-page p {
 	color: black;
 	font-weight: 550;
 	letter-spacing: .5px;
@@ -108,10 +113,28 @@ footer p a {
 }
 
 .contact {
-	align-self: end;
+	align-self: center;
 }
 
 .contact a {
 	color: black;
 	text-decoration: underline;
+}
+
+.profile-section {
+	width: 100%;
+	padding: 2% 0;
+	border-top: 3px solid grey;
+	background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+}
+
+.profile-page {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	width: 90%;
+	margin: 0% auto;
+}
+
+.profile-page p {
+	grid-column: 1/3;
 }
