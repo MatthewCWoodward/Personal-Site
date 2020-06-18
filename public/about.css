@@ -147,18 +147,23 @@ footer p a {
 	margin: 0;
 }
 
-.profile-page div {
+.profile-page > div {
 	align-self: center;
-
 	grid-column: 1/5;
 	background-color: #FAFFFE;
-	padding: 2%;
+	padding: 1.5%;
 	border: 1px solid grey;
 	box-shadow: 0px 1px grey;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 }
 
 .profile-page h2 {
 	text-transform: uppercase;
 	color: #333;
 	margin-bottom: .3em;
+}
+
+.profile-page > div > div {
+	grid-column: 1/3;
 }
