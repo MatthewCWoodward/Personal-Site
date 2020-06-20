@@ -179,10 +179,22 @@ footer p a {
 	grid-column: 1/3;
 }
 
+figure {
+	margin: 0 auto;
+}
+
 figure img {
 	border: 1px solid grey;
 }
 
 figcaption {
 	color: black;
+	letter-spacing: .5px;
+}
+
+.dark-text {
+	color: black;
+	text-decoration: underline;
+	font-weight: bold;
+	text-shadow: none;
 }
