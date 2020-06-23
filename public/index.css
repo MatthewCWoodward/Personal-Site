@@ -46,8 +46,6 @@ body {
 	letter-spacing: 1px;
 	font-weight: 700;
 	padding: .2% .8%;
-  width: 15vw;
-  max-width: 200px;
 	outline: none;
 	position: relative;
 	-webkit-transition: all 0.3s;
@@ -110,7 +108,7 @@ a {
 .name{
   font-family: 'Bookman';
   letter-spacing: 6px;
-  font-size: 70px;
+  font-size: 4.5em;
   color: white;
   padding: 10px 0px 15px 0px;
   text-align: center;
@@ -119,22 +117,13 @@ a {
 
 .buttonBox{
   padding: 0;
-  margin-top: 10px;
+  margin-top: 2em;
   text-align: center;
   transform: translateY(-18%);
 }
 
-#buttonLeft {
-  margin: 0 2% 0 0;
-}
-
-#buttonRight {
-  margin: 0 0 0 2%;
-}
-
 .btnText {
-  margin-top: 6%;
-  margin-bottom: 6%;
+  margin: .7em .7em;
 }
 
 p#newColor {

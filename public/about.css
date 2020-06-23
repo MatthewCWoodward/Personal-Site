@@ -87,11 +87,6 @@ li:last-of-type {
 	text-shadow: .1px .1px black;
 }
 
-.contact a {
-	color: black;
-	text-decoration: underline;
-}
-
 .profile-page h2 {
 	text-transform: uppercase;
 	color: #333;
@@ -115,7 +110,7 @@ footer p a {
 	width: 310px;
 	height: 310px;
 	background: conic-gradient(#6DBAB5 0%, #BEB34B 100%) 50% 50% / 100% 100% no-repeat;
-	padding: 1%;
+	padding: .3em;
 }
 
 .grid-container img {
@@ -223,7 +218,7 @@ footer p {
 		width: 310px;
 		height: 310px;
 		background: conic-gradient(#6DBAB5 0%, #BEB34B 100%) 50% 50% / 100% 100% no-repeat;
-		padding: 1.2%;
+		padding: .3em;
 	}
 
 	.bio {
