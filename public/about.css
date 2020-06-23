@@ -76,6 +76,7 @@ li:last-of-type {
 
 .grid-container {
 	width: 87%;
+	height: 100%;
 	margin: 0 auto;
 }
 
@@ -85,10 +86,6 @@ li:last-of-type {
 	padding: 3%;
 	line-height: 1.5em;
 	text-shadow: .1px .1px black;
-}
-
-p.contact {
-	padding-bottom: 6%;
 }
 
 .profile-page h2 {
@@ -170,7 +167,13 @@ footer p {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 700;
-	font-size: 13px;
+	font-size: 2.3vw;
+}
+
+@media (min-width: 580px) {
+	footer p {
+		font-size: 13px;
+	}
 }
 
 @media (min-width: 900px) {
