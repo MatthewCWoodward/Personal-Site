@@ -137,14 +137,14 @@ footer p a {
 figure {
 	margin: 0 auto;
 	align-self: center;
-	width: 100%;
+	width: 90%;
 	max-width: 361px;
 	height: auto;
 }
 
 figure img {
 	border: 1px solid grey;
-	width: 100%;
+	width: 90%;
 	max-width: 361px;
 	height: auto;
 }
@@ -152,7 +152,7 @@ figure img {
 figcaption {
 	color: black;
 	letter-spacing: .5px;
-	width: 100%;
+	width: 90%;
 	max-width: 361px;
 }
 
