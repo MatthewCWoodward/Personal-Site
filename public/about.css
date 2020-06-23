@@ -76,7 +76,7 @@ li:last-of-type {
 
 .grid-container {
 	width: 87%;
-	margin: 2% auto;
+	margin: 0 auto;
 }
 
 .grid-container p, .profile-page p {
