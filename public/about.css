@@ -87,6 +87,10 @@ li:last-of-type {
 	text-shadow: .1px .1px black;
 }
 
+p.contact {
+	padding-bottom: 6%;
+}
+
 .profile-page h2 {
 	text-transform: uppercase;
 	color: #333;

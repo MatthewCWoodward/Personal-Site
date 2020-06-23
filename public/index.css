@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  overflow: auto;
+  overflow: hidden;
   height: 100%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -52,6 +52,12 @@ body {
 	-moz-transition: all 0.3s;
   transition: all 0.3s;
   white-space: nowrap;
+}
+
+@media (max-width: 515px) {
+  .btn {
+    font-size: 4vw;
+  }
 }
 
 a {
@@ -113,6 +119,12 @@ a {
   padding: 10px 0px 15px 0px;
   text-align: center;
   margin: 0;
+}
+
+@media (max-width: 515px) {
+  .name {
+    font-size: 12vw;
+  }
 }
 
 .buttonBox{
