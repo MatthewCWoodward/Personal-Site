@@ -1,2 +1,0 @@
-.buttonAnimate{border:3px solid #fff;padding:10px;font-size:65%;font-weight:700;letter-spacing:1px;text-transform:uppercase;position:relative;z-index:1}.buttonAnimate:focus{outline:0}.buttonAnimate:after{content:"";position:absolute;z-index:-1;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s;width:0;height:100%;top:0;left:0;background:#35e6b1}.buttonAnimate:active,.buttonAnimate:hover{color:#000}.buttonAnimate:active:after,.buttonAnimate:hover:after{width:100%}
-/*# sourceMappingURL=button.cb3fabd1.css.map */
