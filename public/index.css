@@ -54,7 +54,7 @@ body {
   white-space: nowrap;
 }
 
-@media (max-width: 515px) {
+@media only screen and (max-width: 515px) {
   .btn {
     font-size: 4vw;
   }
@@ -121,7 +121,7 @@ a {
   margin: 0;
 }
 
-@media (max-width: 515px) {
+@media only screen and (max-width: 515px) {
   .name {
     font-size: 12vw;
   }
