@@ -144,7 +144,7 @@ figure {
 
 figure img {
 	border: 1px solid grey;
-	width: 90%;
+	width: 100%;
 	max-width: 361px;
 	height: auto;
 }
@@ -152,7 +152,7 @@ figure img {
 figcaption {
 	color: black;
 	letter-spacing: .5px;
-	width: 90%;
+	width: 100%;
 	max-width: 361px;
 }
 
