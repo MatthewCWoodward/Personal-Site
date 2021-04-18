@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="shortcut icon" type="image/ico" href="../public/favicon.ico" />
+	<link rel="stylesheet" href="../public/index.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="../public/about.css">
+	<link rel="stylesheet" type="text/css" href="../public/projects.css">
+	<link rel="stylesheet" type="text/css" href="../public/button.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<title>Projects</title>
+</head>
+
+<body>
+	<main data-router-wrapper>
+		<section data-router-view="projects" class="projects">
+			<nav>
+				<div class="wrapper">
+					<ul class="nav-links">
+						<li><a class="buttonAnimate" href="./index.html">Home</a></li>
+					</ul>
+				</div>
+			</nav>
+			<section class="background-div2">
+				<div class="grid-container2">
+					<div class="conic2">
+							<img src="../public/bifilar.png" alt="Portrait of Matthew Woodward">
+						</a>
+					</div>
+					<p class="description">
+						<span style="font-weight: bolder;font-size: 2.5em;line-height: 1.5em;">BIFILAR INDUCTION HEATER</span><br><br><br>
+						<span style="font-weight: 550;font-size: 1.2em;line-height: 1.5em;">FEATURED PROJECT</span><br>
+						Designed and built February 2021 - April 2021
+					</p>
+				</div>
+			</section>
+			<section class="project-section">
+				<div class="project-page">
+					<div id="project-overview">
+						<div>
+							<h2>Project Overview</h2>
+							<p>
+								The bifilar induction heater project culminates my interests in electromagnetics and circuit design and has helped me
+								practice skills that will transfer into my future career. <br><br>Through working on this project, I began to understand the
+								importance of conducting thorough research to form a foundation of knowledge behind every project aspect. While building
+								the project, I often faced a new piece of information or challenge that affected the project outlook.
+								However, because I had already had a solid understanding of the project's fundamentals, I could tackle the scenario
+								without panicking.<br><br> Occasionally, the new information I learned would affect the project outlook so strongly that I would
+								need to alter the project's goals to align with the newfound knowledge. Although it may sound simplistic, it is a vital
+								skill that a project leader can identify when a project's goals need to pivot to ones that fit the circumstances. For
+								instance, when building the induction heater, I started with a design for a flyback driver that was relatively complex
+								and required a comprehensive and pricey parts list. After researching commercial induction heaters, I realized that that
+								design would not be economical nor practical compared to commercial offerings. Therefore, despite putting forth a lot of
+								effort into that design, I pivoted my project goals to fit a more simplistic design that would allow me to use more
+								affordable parts. My ability to realize that I needed to shift my project goals helped me avoid chasing an unrealistic
+								project. <br><br>After building the project design, I began to run into errors regarding the project not functioning as it
+								should. This challenge provided me the opportunity to practice objectively analyzing a situation and exploring
+								possibilities to ideate solutions. I needed to objectively analyze the errors to avoid being swayed by the immense
+								amount of time and effort I poured into the project and effectively blame it on faulty parts. Instead, I identified what
+								was going wrong and laid out potential reasons that that error might be occurring and what I can do to fix it. Those
+								analyses are in the section 'Problems and Potential Solutions.'
+							</p>
+						</div>
+						<figure>
+							<img src="../public/autocad.png" alt="autocad schematic of simplistic circuit design">
+							<figcaption>AutoCAD schematic of circuit design ultimately decided on.</figcaption>
+						</figure>
+					</div>
+					<div id="process">
+						<div>
+							<h2>Process</h2>
+							<p>
+								The process I followed when building the bifilar induction heater project allowed me to develop a firm understanding of
+								the science behind the induction heater's function and ultimately led to a more streamlined building and analysis phase.
+								To begin, I identified all questions I had about how electromagnetic induction worked and began researching its core
+								properties, back to Maxwell's equations and how a changing current could induce a magnetic field. Then, I attempted to
+								understand how induction heats containers since the idea was vastly different from the properties gas stoves utilize. I
+								found that eddy currents are induced in ferrite materials and cause energy to release in the form of heat, heating the
+								container. Finally, after having a comprehensive perception of induction heaters, I began to research specific designs
+								and implementations I could use to gain insight. <br><br>Settling on a plan was time-consuming due to some late realizations
+								that a previously decided design wouldn't be realistic. However, once I received the parts I ordered, I got to work building the
+								project. I was eager to start, and because I had done effective research on the project's function, I had a great enough
+								understanding to work quickly through the building and get straight to testing. During testing, the bifilar induction
+								heater wasn't heating the stainless steel lid with water like it intended to but instead was heating one of the MOSFETs
+								in the circuit. Currently, the project is in this stage, where an objective analysis of the problems faced is needed to
+								find a solution.
+							</p>
+						</div>
+						<figure>
+							<img
+								src="../public/frequency.jpg" alt="calculations for tank circuit frequency"></a>
+							<figcaption>Frequency calculations for the tank circuit that drives the alternating current of the induction heater.</figcaption>
+						</figure>
+					</div>
+					<div id="problems-solutions">
+						<div>
+							<h2>Problems and Potential Solutions</h2>
+							<p>
+								The most challenging problem I have faced this far into the project is the unequal heating of the MOSFETs and a
+								potential short in the circuit. When connecting the circuitry to a power supply, as opposed to the load placed above the
+								bifilar coil heating up through induction, one of the MOSFETs is heating up instead to dangerously high temperatures.
+								The danger in this is most obviously the burning of the MOSFET, but it also poses a risk to anyone near the circuit who
+								may touch the MOSFET since it is hot enough to burn.
+								<br><br>
+								A suggestion may be that because of the load the MOSFETs are expected to take on in a ZVS induction heater, they will
+								naturally get hot. However, the problem is that only one MOSFET heats up while the other remains cool, leading to the
+								assumption that power isn't switching between the MOSFETs like a ZVS induction heater intends to incite.
+								<br><br>
+								There are quite a few potential causes to this problem, and identifying which cause it is will require significant
+								effort to the point of potentially rebuilding the circuit. Below, I outline each of the potential causes and the
+								respective solution to go about rectifying the problem:<br><br>
+								&emsp;<span style="font-weight:bold; text-decoration: underline;">- Inadequate power supply</span><br>
+								&emsp;&emsp; An inadequate power supply that is unable to provide the level of current the circuit needs (~10A) will cause the MOSFETs responsible for oscillating to latch up and never oscillate, causing one MOSFET to take all the power. The solution would be to source a more capable battery.<br><br>
+								&emsp;<span style="font-weight:bold; text-decoration: underline;">- Slow-rising power output</span><br>
+								&emsp;&emsp; It is possible that if the power supply is not providing sufficient power as soon as the circuit connects to power, the MOSFETs can latch up and not oscillate. The solution would be to implement an external circuit that allows the battery to reach full power output and then connect to the induction heater circuit.<br><br>
+								&emsp;<span style="font-weight:bold; text-decoration: underline;">- Inadequate current limiters</span><br>
+								&emsp;&emsp; The toroidal chokes in the circuit serve as current limiters, preventing the capacitors from drawing too
+								much current when the circuit starts up. If the current limiters are inadeqate for the circuit, the circuit will short and the MOSFETs will not oscillate. The solution would be to source current limiters with higher inductance values to further slow the draw of current on startup.<br><br>
+								&emsp;<span style="font-weight:bold; text-decoration: underline;">- Inadequate bifilar coil</span><br>
+								&emsp;&emsp; The bifilar coil is currently designed to have very low inductance value in order to not draw too much
+								power from this home project. However, it is possible that this low of an inductance value is causing problems within
+								the tank circuit (LC circuit of inductor and capacitors) and causing the oscillations not to occur. The solution would be to build a bifilar coil with more turns of wire. <br><br>
+								&emsp;<span style="font-weight:bold; text-decoration: underline;">- Faulty MOSFET</span><br>
+								&emsp;&emsp; It is possible that one or both of the MOSFETs are not functioning correctly. The solution would be to replace the MOSFETs with tested MOSFETs.<br><br>
+								&emsp;<span style="font-weight:bold; text-decoration: underline;">- Unstable wiring between components</span><br>
+								&emsp;&emsp; The circuit is currently built with alligator clips and a breadboard. Due to the size of some component wires, they are unable to fit into the breadboard and alligator clips are used. However, this combination of alligator clips and breadboard may not be sufficiently stable. This is an unlikely problem compared to the others, but one to take into consideration. The solution would be to solder the components to a circuit board.<br><br>
+								In order to implement these potential solutions, I will conduct thorough analysis of whether the solutions affect the oscillations within the circuit through an oscilloscope. Measuring this information is important because an induction heater is built off of the concept of running alternating current through a coil to heat a load.
+							</p>
+						</div>
+						<figure>
+							<img src="../public/build.jpg" alt="current circuit build"></a>
+							<figcaption>Most recent build of the bifilar induction heater project.
+							</figcaption>
+						</figure>
+					</div>
+					<div id="timeline">
+						<div>
+							<h2>Next Steps Timeline</h2>
+							<p>
+								I plan to spend more time pursuing the potential solutions listed above during summer 2021. I believe that exploring the possible fixes will not only allow me to build a working product but also build my skills and understandings of electrical engineering concepts and tools, like the oscilloscope. Below is a specific timeline in which I hope to test each solution:<br><br>
+								&emsp;- Inadequate power supply & slow-rising power output (May 2021)<br>
+								&emsp;- Inadequate current limiter & inadequate bifilar coil (June 2021)<br>
+								&emsp;- Faulty MOSFETs & unstable wiring between components (July 2021)
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer>
+				<p>
+					Made by Matthew Woodward
+				</p>
+				<p>
+					See the <a target="_blank" href="https://github.com/MatthewCWoodward/personal-site">GitHub repo</a>
+				</p>
+			</footer>
+			<script src="../js/index.js"></script>
+		</section>
+	</main>
+</body>
+
+</html>
