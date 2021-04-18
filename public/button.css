@@ -6,7 +6,7 @@
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	position: relative;
-	z-index: 1;
+	z-index: 0;
 }
 
 .buttonAnimate:focus {
@@ -35,4 +35,10 @@
 .buttonAnimate:hover:after,
 .buttonAnimate:active:after {
 	width: 100%;
+}
+
+p > .buttonAnimate {
+	border: 2px solid black;
+	color: black;
+	font-size: .8em;
 }
