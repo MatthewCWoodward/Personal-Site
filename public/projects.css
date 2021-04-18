@@ -140,6 +140,7 @@ figure {
 	width: 100%;
 	max-width: 550px;
 	height: auto;
+	text-align: center;
 }
 
 figure img {
