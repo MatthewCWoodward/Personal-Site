@@ -146,7 +146,7 @@ figure {
 figure img {
 	border: 1px solid grey;
 	width: 100%;
-	max-width: 550px;
+	max-width: 450px;
 	height: auto;
 	border-radius: 5px;
 }

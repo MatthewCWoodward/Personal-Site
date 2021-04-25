@@ -147,7 +147,7 @@ figure {
 figure img {
 	border: 1px solid grey;
 	width: 100%;
-	max-width: 550px;
+	max-width: 450px;
 	height: auto;
 	border-radius: 5px;
 }
@@ -292,12 +292,6 @@ footer p {
 
 	#next-steps > div {
 		grid-column: 1/3;
-	}
-
-	#next-steps figure img {
-		max-width: 300px;
-		height: auto;
-		margin: 0 auto;
 	}
 
 	figure {
